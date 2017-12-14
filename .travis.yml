@@ -22,8 +22,6 @@ before_install:
 install:
 - "./install_swiftlint.sh"
 - bundle install
-before_script:
-- carthage bootstrap
 script:
 - set -o pipefail
 - xcodebuild -version
